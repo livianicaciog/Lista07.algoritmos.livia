@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int d, m, a;
+    cin >> d >> m >> a;
+
+    if (d >= 1 && d <= 31 && m >= 1 && m <= 12) {
+        string meses[12] = {"janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
+
+        cout << d << " de " << meses[m - 1] << " de " << a;
+    } else {
+        cout << "Data inválida. Verifique o dia e o mês informados." << endl;
+    }
+
+    return 0;
+}
